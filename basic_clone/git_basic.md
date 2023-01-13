@@ -36,10 +36,6 @@
 - `git pull origin master`
 	- 이미 연결된 상태에서 당겨오기
 
-
-- vim .bash_profile 
-
-- `git reset --hard {}`
-  - head를 옮긴다
-- `git reflog` 
-  - 커밋들이 어떻게 변경됐는지
+- `.gitignore`
+  - 커밋 안하고 무시하기
+  - init 하자마자 gitignore.io 복붙해서 .gitignore에 넣어주기
