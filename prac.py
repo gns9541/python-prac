@@ -1,4 +1,4 @@
-'''#3-2
+'''#3-2 과제
 year = int(input())
 
 if year % 4 == 0 and not year % 100 == 0:
@@ -8,7 +8,7 @@ elif year % 400 == 0:
 else:
     print('윤년 아닙니다')'''
 
-'''#4-2
+'''#4-2 과제
 words = ["round" , "dream", "magnet" , 
 "tweet" , "tweet", "trick", "kiwi"]
 
@@ -151,7 +151,7 @@ for i in test_status:
         break
 #print(test_status)
 '''
-
+'''
 test = int(input())
 test_num = int(input())
 grade = map(int, input().split())
@@ -161,7 +161,7 @@ for i in (grade):
     except: count[i] = 1
 max_value_key = max(count, key=count.get)
 print(max_value_key)
-
+'''
 
 
 
@@ -185,5 +185,46 @@ while t:
         if max_num == lst[i]:
             print(f"#{case} {i}")
             break'''
+
+# 5-2 과제
+
+import calendar
+
+while True:
+    year = int(input())
+    if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):
+        print('윤년입니다. 연도를 다시 입력해주세요')
+    else:
+        print(calendar.calendar(year))
+        break
+
+year1 = int(input())
+month1 = int(input())
+
+day1 = int(input())
+
+day = '월화수목금토일'
+if day[calendar.weekday(year1, month1, day1)] == '월':
+    print('경고 월요일입니다')
+print({'년' : year1, '월' : month1, '일' : day1, '요일' : day[calendar.weekday(year1, month1, day1)]})
+
+
+
+
+# def isleap(year):
+#     return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)
+    
+
+# print(isleap(year))
+
+
+
+
+
+
+
+    
+
+
 
     
