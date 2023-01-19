@@ -130,7 +130,7 @@ if sum1 > sum2:
     print(word1)
 else:
     print(word2)
-
+'''
 
 # 4-5 실습
 test_status = {
@@ -144,13 +144,13 @@ test_status = {
    	'염자바': 'cheating'
 }
 
-for i in test_status:
-    if test_status[i] == 'cheating':
-        print(test_status)
+for i in test_status.values():
+    if i == 'cheating':
+        print(test_status.keys)
     else:
         break
 #print(test_status)
-'''
+
 '''
 test = int(input())
 test_num = int(input())
@@ -186,7 +186,7 @@ while t:
             print(f"#{case} {i}")
             break'''
 
-# 5-2 과제
+'''# 5-2 과제
 
 import calendar
 
@@ -216,7 +216,7 @@ print({'년' : year1, '월' : month1, '일' : day1, '요일' : day[calendar.week
     
 
 # print(isleap(year))
-
+'''
 
 
 
